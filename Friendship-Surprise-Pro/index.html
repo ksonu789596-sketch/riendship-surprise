@@ -1,0 +1,33 @@
+<!-- Static Aesthetic Background -->
+<div class="static-bg"></div>
+
+<!-- Animation Containers -->
+<div id="hearts-container"></div>
+<div id="ribbons-container"></div>
+
+<!-- Memories Section (Add this inside your main app-container) -->
+<section id="memories-section" class="glass-panel">
+    <h2 class="gradient-text">Our Memories</h2>
+    
+    <div class="friend-selector">
+        <label for="friend-select">Choose a Friend:</label>
+        <select id="friend-select">
+            <option value="akarsh">Akarsh</option>
+            <option value="rahul">Rahul</option>
+            <!-- [FILL: Add more friends here] -->
+        </select>
+    </div>
+
+    <div class="memory-display">
+        <!-- [FILL: Default main picture below] -->
+        <img id="memory-image" src="assets/default-pic.jpg" alt="Memory" class="hero-image visible-on-load">
+        
+        <!-- Audio player for Memories -->
+        <audio id="memory-audio" loop>
+            <!-- [FILL: Default background music below] -->
+            <source src="assets/default-music.mp3" type="audio/mpeg">
+        </audio>
+        
+        <button id="play-memory-music" class="btn primary-btn mt-2">Play Memory Music</button>
+    </div>
+</section>
